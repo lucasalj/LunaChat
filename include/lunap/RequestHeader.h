@@ -7,6 +7,11 @@ namespace lunap
 {
     struct RequestHeader : CommonHeader
     {
+        RequestHeader() noexcept = default;
+
+        explicit RequestHeader( MessageType type ) : CommonHeader( type )
+        {
+        }
     };
 }
 

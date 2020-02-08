@@ -8,7 +8,13 @@ namespace lunap
 {
     struct ResponseHeader : CommonHeader
     {
-        ResponseStatus status;
+        ResponseHeader() noexcept = default;
+
+        explicit ResponseHeader( MessageType type ) : CommonHeader( type )
+        {
+        }
+
+        ResponseStatus status{ ResponseStatus::OK };
     };
 }
 

@@ -123,6 +123,19 @@ LunaChat/fast:
 	$(MAKE) -f CMakeFiles/LunaChat.dir/build.make CMakeFiles/LunaChat.dir/build
 .PHONY : LunaChat/fast
 
+#=============================================================================
+# Target rules for targets named Tests
+
+# Build rule for target.
+Tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Tests
+.PHONY : Tests
+
+# fast build rule for target.
+Tests/fast:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/build
+.PHONY : Tests/fast
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -150,6 +163,60 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/LunaChat.dir/build.make CMakeFiles/LunaChat.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+tests/LunaBinTests.o: tests/LunaBinTests.cpp.o
+
+.PHONY : tests/LunaBinTests.o
+
+# target to build an object file
+tests/LunaBinTests.cpp.o:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/tests/LunaBinTests.cpp.o
+.PHONY : tests/LunaBinTests.cpp.o
+
+tests/LunaBinTests.i: tests/LunaBinTests.cpp.i
+
+.PHONY : tests/LunaBinTests.i
+
+# target to preprocess a source file
+tests/LunaBinTests.cpp.i:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/tests/LunaBinTests.cpp.i
+.PHONY : tests/LunaBinTests.cpp.i
+
+tests/LunaBinTests.s: tests/LunaBinTests.cpp.s
+
+.PHONY : tests/LunaBinTests.s
+
+# target to generate assembly for a file
+tests/LunaBinTests.cpp.s:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/tests/LunaBinTests.cpp.s
+.PHONY : tests/LunaBinTests.cpp.s
+
+tests/main_test.o: tests/main_test.cpp.o
+
+.PHONY : tests/main_test.o
+
+# target to build an object file
+tests/main_test.cpp.o:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/tests/main_test.cpp.o
+.PHONY : tests/main_test.cpp.o
+
+tests/main_test.i: tests/main_test.cpp.i
+
+.PHONY : tests/main_test.i
+
+# target to preprocess a source file
+tests/main_test.cpp.i:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/tests/main_test.cpp.i
+.PHONY : tests/main_test.cpp.i
+
+tests/main_test.s: tests/main_test.cpp.s
+
+.PHONY : tests/main_test.s
+
+# target to generate assembly for a file
+tests/main_test.cpp.s:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/tests/main_test.cpp.s
+.PHONY : tests/main_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +226,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LunaChat"
 	@echo "... edit_cache"
+	@echo "... Tests"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/LunaBinTests.o"
+	@echo "... tests/LunaBinTests.i"
+	@echo "... tests/LunaBinTests.s"
+	@echo "... tests/main_test.o"
+	@echo "... tests/main_test.i"
+	@echo "... tests/main_test.s"
 .PHONY : help
 
 

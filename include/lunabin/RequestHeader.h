@@ -1,10 +1,16 @@
 #ifndef LUNACHAT_INCLUDE_LUNABIN_REQUESTHEADER_H
 #define LUNACHAT_INCLUDE_LUNABIN_REQUESTHEADER_H
 
-#include <lunap/RequestHeader.h>
+#include <lunap/All.h>
 #include <lunabin/CommonHeader.h>
 
 namespace lunabin
+{
+    constexpr auto RequestHeaderSize = HeaderSize;
+}
+
+
+namespace bitsery
 {
     template< typename S >
     void serialize( S& s, lunap::RequestHeader& header )

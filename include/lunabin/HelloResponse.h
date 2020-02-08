@@ -3,9 +3,10 @@
 
 #include <bitsery/bitsery.h>
 #include <bitsery/brief_syntax.h>
-#include <lunap/HelloResponse.h>
+#include <lunap/All.h>
 
-namespace lunabin
+
+namespace bitsery
 {
     template< typename S >
     void serialize( S& s, lunap::HelloResponse& msg )

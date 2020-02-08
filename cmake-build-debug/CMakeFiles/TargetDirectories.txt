@@ -1,3 +1,4 @@
 /home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles/LunaChat.dir
 /home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles/Tests.dir

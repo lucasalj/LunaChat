@@ -17,7 +17,7 @@ namespace lunap
         std::array< char, 5 > protocolName{ 'l', 'u', 'n', 'a', '_' };
         std::array< char, 5 > protocolVersion{ '0', '.', '0', '.', '1' };
         std::uint16_t bodySize{ 0 };
-        MessageType type{ MessageType::UNDEFINED };
+        MessageType type{ MessageType::Undefined };
     };
 }
 
