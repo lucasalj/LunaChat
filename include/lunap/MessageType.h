@@ -1,0 +1,14 @@
+#ifndef LUNACHAT_INCLUDE_LUNAP_MESSAGETYPE_H
+#define LUNACHAT_INCLUDE_LUNAP_MESSAGETYPE_H
+
+namespace lunap
+{
+    enum class MessageType
+    {
+        UNDEFINED,
+        HELLO_REQUEST,
+        HELLO_RESPONSE
+    };
+}
+
+#endif //LUNACHAT_INCLUDE_LUNAP_MESSAGETYPE_H

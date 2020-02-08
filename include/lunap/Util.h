@@ -1,0 +1,8 @@
+#ifndef LUNACHAT_INCLUDE_LUNAP_UTIL_H
+#define LUNACHAT_INCLUDE_LUNAP_UTIL_H
+
+namespace lunap
+{
+}
+
+#endif //LUNACHAT_INCLUDE_LUNAP_UTIL_H
