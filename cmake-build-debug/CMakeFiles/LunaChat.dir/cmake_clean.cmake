@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LunaChat.dir/src/lunaserver/HttpSession.cpp.o"
+  "CMakeFiles/LunaChat.dir/src/lunaserver/Server.cpp.o"
   "CMakeFiles/LunaChat.dir/src/main.cpp.o"
   "bin/LunaChat"
   "bin/LunaChat.pdb"

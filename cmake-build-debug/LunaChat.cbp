@@ -38,8 +38,10 @@
 					<Add directory="/home/lucas/.conan/data/boost/1.71.0/conan/stable/package/2e1777b52bec46a45440dc252927f1c4bdda05d8/include"/>
 					<Add directory="/home/lucas/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/home/lucas/.conan/data/bitsery/5.0.3/lib/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/lucas/.conan/data/spdlog/1.4.2/bincrafters/stable/package/c7cee6b8cad72e31ed40b53e905d2d6deca69841/include"/>
 					<Add directory="/home/lucas/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
 					<Add directory="/home/lucas/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"/>
+					<Add directory="/home/lucas/.conan/data/fmt/6.0.0/bincrafters/stable/package/56e0cf6d16ee57367a0661ab743f4e43b29223f8/include"/>
 					<Add directory="/home/lucas/projetos/LunaChat/include"/>
 					<Add directory="/usr/include/c++/8"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
@@ -68,8 +70,10 @@
 					<Add directory="/home/lucas/.conan/data/boost/1.71.0/conan/stable/package/2e1777b52bec46a45440dc252927f1c4bdda05d8/include"/>
 					<Add directory="/home/lucas/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/home/lucas/.conan/data/bitsery/5.0.3/lib/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/lucas/.conan/data/spdlog/1.4.2/bincrafters/stable/package/c7cee6b8cad72e31ed40b53e905d2d6deca69841/include"/>
 					<Add directory="/home/lucas/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
 					<Add directory="/home/lucas/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"/>
+					<Add directory="/home/lucas/.conan/data/fmt/6.0.0/bincrafters/stable/package/56e0cf6d16ee57367a0661ab743f4e43b29223f8/include"/>
 					<Add directory="/home/lucas/projetos/LunaChat/include"/>
 					<Add directory="/usr/include/c++/8"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
@@ -108,8 +112,10 @@
 					<Add directory="/home/lucas/.conan/data/boost/1.71.0/conan/stable/package/2e1777b52bec46a45440dc252927f1c4bdda05d8/include"/>
 					<Add directory="/home/lucas/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/home/lucas/.conan/data/bitsery/5.0.3/lib/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/lucas/.conan/data/spdlog/1.4.2/bincrafters/stable/package/c7cee6b8cad72e31ed40b53e905d2d6deca69841/include"/>
 					<Add directory="/home/lucas/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
 					<Add directory="/home/lucas/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"/>
+					<Add directory="/home/lucas/.conan/data/fmt/6.0.0/bincrafters/stable/package/56e0cf6d16ee57367a0661ab743f4e43b29223f8/include"/>
 					<Add directory="/home/lucas/projetos/LunaChat/include"/>
 					<Add directory="/usr/include/c++/8"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
@@ -138,8 +144,10 @@
 					<Add directory="/home/lucas/.conan/data/boost/1.71.0/conan/stable/package/2e1777b52bec46a45440dc252927f1c4bdda05d8/include"/>
 					<Add directory="/home/lucas/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/home/lucas/.conan/data/bitsery/5.0.3/lib/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/lucas/.conan/data/spdlog/1.4.2/bincrafters/stable/package/c7cee6b8cad72e31ed40b53e905d2d6deca69841/include"/>
 					<Add directory="/home/lucas/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
 					<Add directory="/home/lucas/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"/>
+					<Add directory="/home/lucas/.conan/data/fmt/6.0.0/bincrafters/stable/package/56e0cf6d16ee57367a0661ab743f4e43b29223f8/include"/>
 					<Add directory="/home/lucas/projetos/LunaChat/include"/>
 					<Add directory="/usr/include/c++/8"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
@@ -158,10 +166,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/lucas/projetos/LunaChat/src/lunaserver/HttpSession.cpp">
+			<Option target="LunaChat"/>
+			<Option target="Tests"/>
+		</Unit>
+		<Unit filename="/home/lucas/projetos/LunaChat/src/lunaserver/Server.cpp">
+			<Option target="LunaChat"/>
+			<Option target="Tests"/>
+		</Unit>
 		<Unit filename="/home/lucas/projetos/LunaChat/src/main.cpp">
 			<Option target="LunaChat"/>
 		</Unit>
-		<Unit filename="/home/lucas/projetos/LunaChat/tests/LunaBinTests.cpp">
+		<Unit filename="/home/lucas/projetos/LunaChat/tests/ProtocolSerializationTest.cpp">
 			<Option target="Tests"/>
 		</Unit>
 		<Unit filename="/home/lucas/projetos/LunaChat/tests/main_test.cpp">

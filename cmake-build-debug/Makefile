@@ -136,6 +136,66 @@ Tests/fast:
 	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/build
 .PHONY : Tests/fast
 
+src/lunaserver/HttpSession.o: src/lunaserver/HttpSession.cpp.o
+
+.PHONY : src/lunaserver/HttpSession.o
+
+# target to build an object file
+src/lunaserver/HttpSession.cpp.o:
+	$(MAKE) -f CMakeFiles/LunaChat.dir/build.make CMakeFiles/LunaChat.dir/src/lunaserver/HttpSession.cpp.o
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/src/lunaserver/HttpSession.cpp.o
+.PHONY : src/lunaserver/HttpSession.cpp.o
+
+src/lunaserver/HttpSession.i: src/lunaserver/HttpSession.cpp.i
+
+.PHONY : src/lunaserver/HttpSession.i
+
+# target to preprocess a source file
+src/lunaserver/HttpSession.cpp.i:
+	$(MAKE) -f CMakeFiles/LunaChat.dir/build.make CMakeFiles/LunaChat.dir/src/lunaserver/HttpSession.cpp.i
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/src/lunaserver/HttpSession.cpp.i
+.PHONY : src/lunaserver/HttpSession.cpp.i
+
+src/lunaserver/HttpSession.s: src/lunaserver/HttpSession.cpp.s
+
+.PHONY : src/lunaserver/HttpSession.s
+
+# target to generate assembly for a file
+src/lunaserver/HttpSession.cpp.s:
+	$(MAKE) -f CMakeFiles/LunaChat.dir/build.make CMakeFiles/LunaChat.dir/src/lunaserver/HttpSession.cpp.s
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/src/lunaserver/HttpSession.cpp.s
+.PHONY : src/lunaserver/HttpSession.cpp.s
+
+src/lunaserver/Server.o: src/lunaserver/Server.cpp.o
+
+.PHONY : src/lunaserver/Server.o
+
+# target to build an object file
+src/lunaserver/Server.cpp.o:
+	$(MAKE) -f CMakeFiles/LunaChat.dir/build.make CMakeFiles/LunaChat.dir/src/lunaserver/Server.cpp.o
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/src/lunaserver/Server.cpp.o
+.PHONY : src/lunaserver/Server.cpp.o
+
+src/lunaserver/Server.i: src/lunaserver/Server.cpp.i
+
+.PHONY : src/lunaserver/Server.i
+
+# target to preprocess a source file
+src/lunaserver/Server.cpp.i:
+	$(MAKE) -f CMakeFiles/LunaChat.dir/build.make CMakeFiles/LunaChat.dir/src/lunaserver/Server.cpp.i
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/src/lunaserver/Server.cpp.i
+.PHONY : src/lunaserver/Server.cpp.i
+
+src/lunaserver/Server.s: src/lunaserver/Server.cpp.s
+
+.PHONY : src/lunaserver/Server.s
+
+# target to generate assembly for a file
+src/lunaserver/Server.cpp.s:
+	$(MAKE) -f CMakeFiles/LunaChat.dir/build.make CMakeFiles/LunaChat.dir/src/lunaserver/Server.cpp.s
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/src/lunaserver/Server.cpp.s
+.PHONY : src/lunaserver/Server.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -163,32 +223,32 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/LunaChat.dir/build.make CMakeFiles/LunaChat.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-tests/LunaBinTests.o: tests/LunaBinTests.cpp.o
+tests/ProtocolSerializationTest.o: tests/ProtocolSerializationTest.cpp.o
 
-.PHONY : tests/LunaBinTests.o
+.PHONY : tests/ProtocolSerializationTest.o
 
 # target to build an object file
-tests/LunaBinTests.cpp.o:
-	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/tests/LunaBinTests.cpp.o
-.PHONY : tests/LunaBinTests.cpp.o
+tests/ProtocolSerializationTest.cpp.o:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/tests/ProtocolSerializationTest.cpp.o
+.PHONY : tests/ProtocolSerializationTest.cpp.o
 
-tests/LunaBinTests.i: tests/LunaBinTests.cpp.i
+tests/ProtocolSerializationTest.i: tests/ProtocolSerializationTest.cpp.i
 
-.PHONY : tests/LunaBinTests.i
+.PHONY : tests/ProtocolSerializationTest.i
 
 # target to preprocess a source file
-tests/LunaBinTests.cpp.i:
-	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/tests/LunaBinTests.cpp.i
-.PHONY : tests/LunaBinTests.cpp.i
+tests/ProtocolSerializationTest.cpp.i:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/tests/ProtocolSerializationTest.cpp.i
+.PHONY : tests/ProtocolSerializationTest.cpp.i
 
-tests/LunaBinTests.s: tests/LunaBinTests.cpp.s
+tests/ProtocolSerializationTest.s: tests/ProtocolSerializationTest.cpp.s
 
-.PHONY : tests/LunaBinTests.s
+.PHONY : tests/ProtocolSerializationTest.s
 
 # target to generate assembly for a file
-tests/LunaBinTests.cpp.s:
-	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/tests/LunaBinTests.cpp.s
-.PHONY : tests/LunaBinTests.cpp.s
+tests/ProtocolSerializationTest.cpp.s:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/tests/ProtocolSerializationTest.cpp.s
+.PHONY : tests/ProtocolSerializationTest.cpp.s
 
 tests/main_test.o: tests/main_test.cpp.o
 
@@ -227,12 +287,18 @@ help:
 	@echo "... LunaChat"
 	@echo "... edit_cache"
 	@echo "... Tests"
+	@echo "... src/lunaserver/HttpSession.o"
+	@echo "... src/lunaserver/HttpSession.i"
+	@echo "... src/lunaserver/HttpSession.s"
+	@echo "... src/lunaserver/Server.o"
+	@echo "... src/lunaserver/Server.i"
+	@echo "... src/lunaserver/Server.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... tests/LunaBinTests.o"
-	@echo "... tests/LunaBinTests.i"
-	@echo "... tests/LunaBinTests.s"
+	@echo "... tests/ProtocolSerializationTest.o"
+	@echo "... tests/ProtocolSerializationTest.i"
+	@echo "... tests/ProtocolSerializationTest.s"
 	@echo "... tests/main_test.o"
 	@echo "... tests/main_test.i"
 	@echo "... tests/main_test.s"

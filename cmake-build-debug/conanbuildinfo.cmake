@@ -91,6 +91,31 @@ set(CONAN_CXX_FLAGS_BITSERY_LIST "-std=c++17")
 set(CONAN_SHARED_LINKER_FLAGS_BITSERY_LIST "")
 set(CONAN_EXE_LINKER_FLAGS_BITSERY_LIST "")
 
+set(CONAN_SPDLOG_ROOT "/home/lucas/.conan/data/spdlog/1.4.2/bincrafters/stable/package/c7cee6b8cad72e31ed40b53e905d2d6deca69841")
+set(CONAN_INCLUDE_DIRS_SPDLOG "/home/lucas/.conan/data/spdlog/1.4.2/bincrafters/stable/package/c7cee6b8cad72e31ed40b53e905d2d6deca69841/include")
+set(CONAN_LIB_DIRS_SPDLOG "/home/lucas/.conan/data/spdlog/1.4.2/bincrafters/stable/package/c7cee6b8cad72e31ed40b53e905d2d6deca69841/lib")
+set(CONAN_BIN_DIRS_SPDLOG)
+set(CONAN_RES_DIRS_SPDLOG)
+set(CONAN_SRC_DIRS_SPDLOG)
+set(CONAN_BUILD_DIRS_SPDLOG "/home/lucas/.conan/data/spdlog/1.4.2/bincrafters/stable/package/c7cee6b8cad72e31ed40b53e905d2d6deca69841/")
+set(CONAN_LIBS_SPDLOG spdlog pthread)
+set(CONAN_DEFINES_SPDLOG "-DSPDLOG_COMPILED_LIB"
+        "-DSPDLOG_FMT_EXTERNAL")
+# COMPILE_DEFINITIONS are equal to CONAN_DEFINES without -D, for targets
+set(CONAN_COMPILE_DEFINITIONS_SPDLOG "SPDLOG_COMPILED_LIB"
+        "SPDLOG_FMT_EXTERNAL")
+
+set(CONAN_C_FLAGS_SPDLOG "")
+set(CONAN_CXX_FLAGS_SPDLOG "")
+set(CONAN_SHARED_LINKER_FLAGS_SPDLOG "")
+set(CONAN_EXE_LINKER_FLAGS_SPDLOG "")
+
+# For modern cmake targets we use the list variables (separated with ;)
+set(CONAN_C_FLAGS_SPDLOG_LIST "")
+set(CONAN_CXX_FLAGS_SPDLOG_LIST "")
+set(CONAN_SHARED_LINKER_FLAGS_SPDLOG_LIST "")
+set(CONAN_EXE_LINKER_FLAGS_SPDLOG_LIST "")
+
 set(CONAN_ZLIB_ROOT "/home/lucas/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a")
 set(CONAN_INCLUDE_DIRS_ZLIB "/home/lucas/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include")
 set(CONAN_LIB_DIRS_ZLIB "/home/lucas/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/lib")
@@ -137,6 +162,29 @@ set(CONAN_CXX_FLAGS_BZIP2_LIST "")
 set(CONAN_SHARED_LINKER_FLAGS_BZIP2_LIST "")
 set(CONAN_EXE_LINKER_FLAGS_BZIP2_LIST "")
 
+set(CONAN_FMT_ROOT "/home/lucas/.conan/data/fmt/6.0.0/bincrafters/stable/package/56e0cf6d16ee57367a0661ab743f4e43b29223f8")
+set(CONAN_INCLUDE_DIRS_FMT "/home/lucas/.conan/data/fmt/6.0.0/bincrafters/stable/package/56e0cf6d16ee57367a0661ab743f4e43b29223f8/include")
+set(CONAN_LIB_DIRS_FMT "/home/lucas/.conan/data/fmt/6.0.0/bincrafters/stable/package/56e0cf6d16ee57367a0661ab743f4e43b29223f8/lib")
+set(CONAN_BIN_DIRS_FMT)
+set(CONAN_RES_DIRS_FMT)
+set(CONAN_SRC_DIRS_FMT)
+set(CONAN_BUILD_DIRS_FMT "/home/lucas/.conan/data/fmt/6.0.0/bincrafters/stable/package/56e0cf6d16ee57367a0661ab743f4e43b29223f8/")
+set(CONAN_LIBS_FMT fmt)
+set(CONAN_DEFINES_FMT)
+# COMPILE_DEFINITIONS are equal to CONAN_DEFINES without -D, for targets
+set(CONAN_COMPILE_DEFINITIONS_FMT)
+
+set(CONAN_C_FLAGS_FMT "")
+set(CONAN_CXX_FLAGS_FMT "")
+set(CONAN_SHARED_LINKER_FLAGS_FMT "")
+set(CONAN_EXE_LINKER_FLAGS_FMT "")
+
+# For modern cmake targets we use the list variables (separated with ;)
+set(CONAN_C_FLAGS_FMT_LIST "")
+set(CONAN_CXX_FLAGS_FMT_LIST "")
+set(CONAN_SHARED_LINKER_FLAGS_FMT_LIST "")
+set(CONAN_EXE_LINKER_FLAGS_FMT_LIST "")
+
 
 ### Definition of global aggregated variables ###
 
@@ -152,7 +200,7 @@ set(CONAN_SETTINGS_COMPILER_VERSION "8")
 set(CONAN_SETTINGS_OS "Linux")
 set(CONAN_SETTINGS_OS_BUILD "Linux")
 
-set(CONAN_DEPENDENCIES range-v3 boost Catch2 bitsery zlib bzip2)
+set(CONAN_DEPENDENCIES range-v3 boost Catch2 bitsery spdlog zlib bzip2 fmt)
 # Storing original command line args (CMake helper) flags
 set(CONAN_CMD_CXX_FLAGS ${CONAN_CXX_FLAGS})
 
@@ -164,23 +212,31 @@ set(CONAN_INCLUDE_DIRS "/home/lucas/.conan/data/range-v3/0.5.0/ericniebler/stabl
         "/home/lucas/.conan/data/boost/1.71.0/conan/stable/package/2e1777b52bec46a45440dc252927f1c4bdda05d8/include"
         "/home/lucas/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
         "/home/lucas/.conan/data/bitsery/5.0.3/lib/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
+        "/home/lucas/.conan/data/spdlog/1.4.2/bincrafters/stable/package/c7cee6b8cad72e31ed40b53e905d2d6deca69841/include"
         "/home/lucas/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"
-        "/home/lucas/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include" ${CONAN_INCLUDE_DIRS})
+        "/home/lucas/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"
+        "/home/lucas/.conan/data/fmt/6.0.0/bincrafters/stable/package/56e0cf6d16ee57367a0661ab743f4e43b29223f8/include" ${CONAN_INCLUDE_DIRS})
 set(CONAN_LIB_DIRS "/home/lucas/.conan/data/range-v3/0.5.0/ericniebler/stable/package/108b10878ddfbada81a0ed2fb115999aafcd316c/lib"
         "/home/lucas/.conan/data/boost/1.71.0/conan/stable/package/2e1777b52bec46a45440dc252927f1c4bdda05d8/lib"
         "/home/lucas/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib"
+        "/home/lucas/.conan/data/spdlog/1.4.2/bincrafters/stable/package/c7cee6b8cad72e31ed40b53e905d2d6deca69841/lib"
         "/home/lucas/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/lib"
-        "/home/lucas/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/lib" ${CONAN_LIB_DIRS})
+        "/home/lucas/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/lib"
+        "/home/lucas/.conan/data/fmt/6.0.0/bincrafters/stable/package/56e0cf6d16ee57367a0661ab743f4e43b29223f8/lib" ${CONAN_LIB_DIRS})
 set(CONAN_BIN_DIRS "/home/lucas/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/bin" ${CONAN_BIN_DIRS})
 set(CONAN_RES_DIRS ${CONAN_RES_DIRS})
-set(CONAN_LIBS boost_wave boost_container boost_contract boost_exception boost_graph boost_iostreams boost_locale boost_log boost_program_options boost_random boost_regex boost_serialization boost_wserialization boost_coroutine boost_fiber boost_context boost_timer boost_thread boost_chrono boost_date_time boost_atomic boost_filesystem boost_system boost_type_erasure boost_log_setup boost_math_c99 boost_math_c99f boost_math_c99l boost_math_tr1 boost_math_tr1f boost_math_tr1l boost_stacktrace_addr2line boost_stacktrace_backtrace boost_stacktrace_basic boost_stacktrace_noop boost_unit_test_framework pthread z bz2 ${CONAN_LIBS})
-set(CONAN_DEFINES "-D_GLIBCXX_USE_CXX11_ABI=1" ${CONAN_DEFINES})
+set(CONAN_LIBS boost_wave boost_container boost_contract boost_exception boost_graph boost_iostreams boost_locale boost_log boost_program_options boost_random boost_regex boost_serialization boost_wserialization boost_coroutine boost_fiber boost_context boost_timer boost_thread boost_chrono boost_date_time boost_atomic boost_filesystem boost_system boost_type_erasure boost_log_setup boost_math_c99 boost_math_c99f boost_math_c99l boost_math_tr1 boost_math_tr1f boost_math_tr1l boost_stacktrace_addr2line boost_stacktrace_backtrace boost_stacktrace_basic boost_stacktrace_noop boost_unit_test_framework spdlog pthread z bz2 fmt ${CONAN_LIBS})
+set(CONAN_DEFINES "-DSPDLOG_COMPILED_LIB"
+        "-DSPDLOG_FMT_EXTERNAL"
+        "-D_GLIBCXX_USE_CXX11_ABI=1" ${CONAN_DEFINES})
 set(CONAN_CMAKE_MODULE_PATH "/home/lucas/.conan/data/range-v3/0.5.0/ericniebler/stable/package/108b10878ddfbada81a0ed2fb115999aafcd316c/"
         "/home/lucas/.conan/data/boost/1.71.0/conan/stable/package/2e1777b52bec46a45440dc252927f1c4bdda05d8/"
         "/home/lucas/.conan/data/Catch2/2.9.1/catchorg/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/"
         "/home/lucas/.conan/data/bitsery/5.0.3/lib/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/"
+        "/home/lucas/.conan/data/spdlog/1.4.2/bincrafters/stable/package/c7cee6b8cad72e31ed40b53e905d2d6deca69841/"
         "/home/lucas/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/"
-        "/home/lucas/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/" ${CONAN_CMAKE_MODULE_PATH})
+        "/home/lucas/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/"
+        "/home/lucas/.conan/data/fmt/6.0.0/bincrafters/stable/package/56e0cf6d16ee57367a0661ab743f4e43b29223f8/" ${CONAN_CMAKE_MODULE_PATH})
 
 set(CONAN_CXX_FLAGS "-std=c++17 ${CONAN_CXX_FLAGS}")
 set(CONAN_SHARED_LINKER_FLAGS " ${CONAN_SHARED_LINKER_FLAGS}")
@@ -347,6 +403,43 @@ macro(conan_define_targets)
             $<$<CONFIG:Debug>:${CONAN_C_FLAGS_BITSERY_DEBUG_LIST} ${CONAN_CXX_FLAGS_BITSERY_DEBUG_LIST}>)
 
 
+    conan_package_library_targets("${CONAN_LIBS_SPDLOG}" "${CONAN_LIB_DIRS_SPDLOG}"
+            CONAN_PACKAGE_TARGETS_SPDLOG "CONAN_PKG::fmt" "" spdlog)
+    conan_package_library_targets("${CONAN_LIBS_SPDLOG_DEBUG}" "${CONAN_LIB_DIRS_SPDLOG_DEBUG}"
+            CONAN_PACKAGE_TARGETS_SPDLOG_DEBUG "CONAN_PKG::fmt" "debug" spdlog)
+    conan_package_library_targets("${CONAN_LIBS_SPDLOG_RELEASE}" "${CONAN_LIB_DIRS_SPDLOG_RELEASE}"
+            CONAN_PACKAGE_TARGETS_SPDLOG_RELEASE "CONAN_PKG::fmt" "release" spdlog)
+    conan_package_library_targets("${CONAN_LIBS_SPDLOG_RELWITHDEBINFO}" "${CONAN_LIB_DIRS_SPDLOG_RELWITHDEBINFO}"
+            CONAN_PACKAGE_TARGETS_SPDLOG_RELWITHDEBINFO "CONAN_PKG::fmt" "relwithdebinfo" spdlog)
+    conan_package_library_targets("${CONAN_LIBS_SPDLOG_MINSIZEREL}" "${CONAN_LIB_DIRS_SPDLOG_MINSIZEREL}"
+            CONAN_PACKAGE_TARGETS_SPDLOG_MINSIZEREL "CONAN_PKG::fmt" "minsizerel" spdlog)
+
+    add_library(CONAN_PKG::spdlog INTERFACE IMPORTED)
+
+    # Property INTERFACE_LINK_FLAGS do not work, necessary to add to INTERFACE_LINK_LIBRARIES
+    set_property(TARGET CONAN_PKG::spdlog PROPERTY INTERFACE_LINK_LIBRARIES ${CONAN_PACKAGE_TARGETS_SPDLOG} ${CONAN_SHARED_LINKER_FLAGS_SPDLOG_LIST} ${CONAN_EXE_LINKER_FLAGS_SPDLOG_LIST}
+            $<$<CONFIG:Release>:${CONAN_PACKAGE_TARGETS_SPDLOG_RELEASE} ${CONAN_SHARED_LINKER_FLAGS_SPDLOG_RELEASE_LIST} ${CONAN_EXE_LINKER_FLAGS_SPDLOG_RELEASE_LIST}>
+            $<$<CONFIG:RelWithDebInfo>:${CONAN_PACKAGE_TARGETS_SPDLOG_RELWITHDEBINFO} ${CONAN_SHARED_LINKER_FLAGS_SPDLOG_RELWITHDEBINFO_LIST} ${CONAN_EXE_LINKER_FLAGS_SPDLOG_RELWITHDEBINFO_LIST}>
+            $<$<CONFIG:MinSizeRel>:${CONAN_PACKAGE_TARGETS_SPDLOG_MINSIZEREL} ${CONAN_SHARED_LINKER_FLAGS_SPDLOG_MINSIZEREL_LIST} ${CONAN_EXE_LINKER_FLAGS_SPDLOG_MINSIZEREL_LIST}>
+            $<$<CONFIG:Debug>:${CONAN_PACKAGE_TARGETS_SPDLOG_DEBUG} ${CONAN_SHARED_LINKER_FLAGS_SPDLOG_DEBUG_LIST} ${CONAN_EXE_LINKER_FLAGS_SPDLOG_DEBUG_LIST}>
+            CONAN_PKG::fmt)
+    set_property(TARGET CONAN_PKG::spdlog PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${CONAN_INCLUDE_DIRS_SPDLOG}
+            $<$<CONFIG:Release>:${CONAN_INCLUDE_DIRS_SPDLOG_RELEASE}>
+            $<$<CONFIG:RelWithDebInfo>:${CONAN_INCLUDE_DIRS_SPDLOG_RELWITHDEBINFO}>
+            $<$<CONFIG:MinSizeRel>:${CONAN_INCLUDE_DIRS_SPDLOG_MINSIZEREL}>
+            $<$<CONFIG:Debug>:${CONAN_INCLUDE_DIRS_SPDLOG_DEBUG}>)
+    set_property(TARGET CONAN_PKG::spdlog PROPERTY INTERFACE_COMPILE_DEFINITIONS ${CONAN_COMPILE_DEFINITIONS_SPDLOG}
+            $<$<CONFIG:Release>:${CONAN_COMPILE_DEFINITIONS_SPDLOG_RELEASE}>
+            $<$<CONFIG:RelWithDebInfo>:${CONAN_COMPILE_DEFINITIONS_SPDLOG_RELWITHDEBINFO}>
+            $<$<CONFIG:MinSizeRel>:${CONAN_COMPILE_DEFINITIONS_SPDLOG_MINSIZEREL}>
+            $<$<CONFIG:Debug>:${CONAN_COMPILE_DEFINITIONS_SPDLOG_DEBUG}>)
+    set_property(TARGET CONAN_PKG::spdlog PROPERTY INTERFACE_COMPILE_OPTIONS ${CONAN_C_FLAGS_SPDLOG_LIST} ${CONAN_CXX_FLAGS_SPDLOG_LIST}
+            $<$<CONFIG:Release>:${CONAN_C_FLAGS_SPDLOG_RELEASE_LIST} ${CONAN_CXX_FLAGS_SPDLOG_RELEASE_LIST}>
+            $<$<CONFIG:RelWithDebInfo>:${CONAN_C_FLAGS_SPDLOG_RELWITHDEBINFO_LIST} ${CONAN_CXX_FLAGS_SPDLOG_RELWITHDEBINFO_LIST}>
+            $<$<CONFIG:MinSizeRel>:${CONAN_C_FLAGS_SPDLOG_MINSIZEREL_LIST} ${CONAN_CXX_FLAGS_SPDLOG_MINSIZEREL_LIST}>
+            $<$<CONFIG:Debug>:${CONAN_C_FLAGS_SPDLOG_DEBUG_LIST} ${CONAN_CXX_FLAGS_SPDLOG_DEBUG_LIST}>)
+
+
     conan_package_library_targets("${CONAN_LIBS_ZLIB}" "${CONAN_LIB_DIRS_ZLIB}"
             CONAN_PACKAGE_TARGETS_ZLIB "" "" zlib)
     conan_package_library_targets("${CONAN_LIBS_ZLIB_DEBUG}" "${CONAN_LIB_DIRS_ZLIB_DEBUG}"
@@ -420,7 +513,44 @@ macro(conan_define_targets)
             $<$<CONFIG:MinSizeRel>:${CONAN_C_FLAGS_BZIP2_MINSIZEREL_LIST} ${CONAN_CXX_FLAGS_BZIP2_MINSIZEREL_LIST}>
             $<$<CONFIG:Debug>:${CONAN_C_FLAGS_BZIP2_DEBUG_LIST} ${CONAN_CXX_FLAGS_BZIP2_DEBUG_LIST}>)
 
-    set(CONAN_TARGETS CONAN_PKG::range-v3 CONAN_PKG::boost CONAN_PKG::Catch2 CONAN_PKG::bitsery CONAN_PKG::zlib CONAN_PKG::bzip2)
+
+    conan_package_library_targets("${CONAN_LIBS_FMT}" "${CONAN_LIB_DIRS_FMT}"
+            CONAN_PACKAGE_TARGETS_FMT "" "" fmt)
+    conan_package_library_targets("${CONAN_LIBS_FMT_DEBUG}" "${CONAN_LIB_DIRS_FMT_DEBUG}"
+            CONAN_PACKAGE_TARGETS_FMT_DEBUG "" "debug" fmt)
+    conan_package_library_targets("${CONAN_LIBS_FMT_RELEASE}" "${CONAN_LIB_DIRS_FMT_RELEASE}"
+            CONAN_PACKAGE_TARGETS_FMT_RELEASE "" "release" fmt)
+    conan_package_library_targets("${CONAN_LIBS_FMT_RELWITHDEBINFO}" "${CONAN_LIB_DIRS_FMT_RELWITHDEBINFO}"
+            CONAN_PACKAGE_TARGETS_FMT_RELWITHDEBINFO "" "relwithdebinfo" fmt)
+    conan_package_library_targets("${CONAN_LIBS_FMT_MINSIZEREL}" "${CONAN_LIB_DIRS_FMT_MINSIZEREL}"
+            CONAN_PACKAGE_TARGETS_FMT_MINSIZEREL "" "minsizerel" fmt)
+
+    add_library(CONAN_PKG::fmt INTERFACE IMPORTED)
+
+    # Property INTERFACE_LINK_FLAGS do not work, necessary to add to INTERFACE_LINK_LIBRARIES
+    set_property(TARGET CONAN_PKG::fmt PROPERTY INTERFACE_LINK_LIBRARIES ${CONAN_PACKAGE_TARGETS_FMT} ${CONAN_SHARED_LINKER_FLAGS_FMT_LIST} ${CONAN_EXE_LINKER_FLAGS_FMT_LIST}
+            $<$<CONFIG:Release>:${CONAN_PACKAGE_TARGETS_FMT_RELEASE} ${CONAN_SHARED_LINKER_FLAGS_FMT_RELEASE_LIST} ${CONAN_EXE_LINKER_FLAGS_FMT_RELEASE_LIST}>
+            $<$<CONFIG:RelWithDebInfo>:${CONAN_PACKAGE_TARGETS_FMT_RELWITHDEBINFO} ${CONAN_SHARED_LINKER_FLAGS_FMT_RELWITHDEBINFO_LIST} ${CONAN_EXE_LINKER_FLAGS_FMT_RELWITHDEBINFO_LIST}>
+            $<$<CONFIG:MinSizeRel>:${CONAN_PACKAGE_TARGETS_FMT_MINSIZEREL} ${CONAN_SHARED_LINKER_FLAGS_FMT_MINSIZEREL_LIST} ${CONAN_EXE_LINKER_FLAGS_FMT_MINSIZEREL_LIST}>
+            $<$<CONFIG:Debug>:${CONAN_PACKAGE_TARGETS_FMT_DEBUG} ${CONAN_SHARED_LINKER_FLAGS_FMT_DEBUG_LIST} ${CONAN_EXE_LINKER_FLAGS_FMT_DEBUG_LIST}>
+            )
+    set_property(TARGET CONAN_PKG::fmt PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${CONAN_INCLUDE_DIRS_FMT}
+            $<$<CONFIG:Release>:${CONAN_INCLUDE_DIRS_FMT_RELEASE}>
+            $<$<CONFIG:RelWithDebInfo>:${CONAN_INCLUDE_DIRS_FMT_RELWITHDEBINFO}>
+            $<$<CONFIG:MinSizeRel>:${CONAN_INCLUDE_DIRS_FMT_MINSIZEREL}>
+            $<$<CONFIG:Debug>:${CONAN_INCLUDE_DIRS_FMT_DEBUG}>)
+    set_property(TARGET CONAN_PKG::fmt PROPERTY INTERFACE_COMPILE_DEFINITIONS ${CONAN_COMPILE_DEFINITIONS_FMT}
+            $<$<CONFIG:Release>:${CONAN_COMPILE_DEFINITIONS_FMT_RELEASE}>
+            $<$<CONFIG:RelWithDebInfo>:${CONAN_COMPILE_DEFINITIONS_FMT_RELWITHDEBINFO}>
+            $<$<CONFIG:MinSizeRel>:${CONAN_COMPILE_DEFINITIONS_FMT_MINSIZEREL}>
+            $<$<CONFIG:Debug>:${CONAN_COMPILE_DEFINITIONS_FMT_DEBUG}>)
+    set_property(TARGET CONAN_PKG::fmt PROPERTY INTERFACE_COMPILE_OPTIONS ${CONAN_C_FLAGS_FMT_LIST} ${CONAN_CXX_FLAGS_FMT_LIST}
+            $<$<CONFIG:Release>:${CONAN_C_FLAGS_FMT_RELEASE_LIST} ${CONAN_CXX_FLAGS_FMT_RELEASE_LIST}>
+            $<$<CONFIG:RelWithDebInfo>:${CONAN_C_FLAGS_FMT_RELWITHDEBINFO_LIST} ${CONAN_CXX_FLAGS_FMT_RELWITHDEBINFO_LIST}>
+            $<$<CONFIG:MinSizeRel>:${CONAN_C_FLAGS_FMT_MINSIZEREL_LIST} ${CONAN_CXX_FLAGS_FMT_MINSIZEREL_LIST}>
+            $<$<CONFIG:Debug>:${CONAN_C_FLAGS_FMT_DEBUG_LIST} ${CONAN_CXX_FLAGS_FMT_DEBUG_LIST}>)
+
+    set(CONAN_TARGETS CONAN_PKG::range-v3 CONAN_PKG::boost CONAN_PKG::Catch2 CONAN_PKG::bitsery CONAN_PKG::spdlog CONAN_PKG::zlib CONAN_PKG::bzip2 CONAN_PKG::fmt)
 
 endmacro()
 

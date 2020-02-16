@@ -3,7 +3,7 @@
 #include <vector>
 #include <string_view>
 
-SCENARIO( "Serialization of Hello messages", "[lunabin]" )
+SCENARIO( "Serialization of Hello messages", "[serialization]" )
 {
     GIVEN( "A HelloRequest message" )
     {

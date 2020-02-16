@@ -76,12 +76,12 @@ preinstall:
 CMakeFiles/LunaChat.dir/all:
 	$(MAKE) -f CMakeFiles/LunaChat.dir/build.make CMakeFiles/LunaChat.dir/depend
 	$(MAKE) -f CMakeFiles/LunaChat.dir/build.make CMakeFiles/LunaChat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target LunaChat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target LunaChat"
 .PHONY : CMakeFiles/LunaChat.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LunaChat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LunaChat.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/LunaChat.dir/rule
@@ -103,12 +103,12 @@ CMakeFiles/LunaChat.dir/clean:
 CMakeFiles/Tests.dir/all:
 	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/depend
 	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target Tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8,9 "Built target Tests"
 .PHONY : CMakeFiles/Tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucas/projetos/LunaChat/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Tests.dir/rule
